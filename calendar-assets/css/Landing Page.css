@@ -1,0 +1,12 @@
+.category-img:hover {
+  opacity: 0.8;
+}
+
+.sub-category-name:hover {
+  color: var(--bs-gray-800);
+}
+
+.sub-category-name {
+  color: black;
+}
+
