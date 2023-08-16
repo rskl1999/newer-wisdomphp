@@ -1,0 +1,53 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e6e6ef;
+  font-size: 13px;
+}
+
+label {
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+  margin-right: 3.2em;
+}
+
+label input {
+  position: absolute;
+  left: -9999px;
+}
+
+label input:checked + span {
+  background-color: rgb(231, 235, 255);
+}
+
+label input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em rgb(17,55,239);
+}
+
+label span {
+  display: flex;
+  align-items: center;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  border-radius: 99em;
+  transition: 0.25s ease;
+}
+
+label span:hover {
+  background-color: #eeeeee;
+}
+
+label span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em rgb(17,55,239);
+}

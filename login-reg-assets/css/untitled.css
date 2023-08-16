@@ -1,0 +1,33 @@
+#cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*height: 80%;*/
+  /*background-color: #f2f2f2;*/
+  /*border: 1px solid #ccc;*/
+  /*padding: 20px;*/
+}
+
+#con {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #dfdfdf;
+}
+
+input {
+}
+
+#prof {
+  display: none;
+}
+
