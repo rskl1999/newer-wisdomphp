@@ -1,0 +1,105 @@
+
+.icons {
+    display: flex;
+}
+
+.icons span {
+    height: 42px;
+    width: 42px;
+    margin: 9px 3px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 40px;
+    font-size: 2.7rem;
+    user-select: none;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.icons span:last-child{
+    margin-right: -10px;
+  }
+.icons span:hover{
+    background: #f2f2f2;
+  }
+
+.current-date{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+.calendar {
+    padding: 15px;
+}
+    
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.calendar .days {
+    margin-bottom: 7px;
+}
+
+.calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.5rem;
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+    color: #3A9AF9;
+}
+
+.calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    width: 100px;
+    height: 120px;
+    margin-right: 12px;
+}
+
+.days li {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    padding: 72px 3px 1px 57px;
+    justify-content: space-between;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    color: #fff;
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 120px;
+    z-index: -1;
+    border-radius: 20px;
+    left: 0;
+    top: 0;
+}
+
+.days li.active::before {
+    background: #9FCFFF;
+}
+
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
+}
