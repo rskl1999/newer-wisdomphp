@@ -1,0 +1,85 @@
+.todo-item {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically in the todo item */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  position: relative;
+}
+
+.todo-content {
+  flex: 1;
+  margin: 10px 9px 17px 8px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+.actions {
+  display: flex; /* Use flexbox to align buttons horizontally */
+  margin: 0px 7px 27px 10px;
+  gap: 0px; /* Add some space between the buttons */
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 30%;
+  outline: none;
+  cursor: pointer;
+  position: relative; /* Add position relative to enable positioning of checkmark */
+}
+
+input[type="checkbox"]::after {
+  content: '\f00c'; /* Unicode for checkmark icon (font-awesome) */
+  font-family: "Font Awesome 5 Free"; /* Font-family for font-awesome */
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the checkmark icon */
+  font-size: 11px;
+  color: #fff;
+  opacity: 0; /* Initially hidden */
+}
+
+input[type="checkbox"]:checked {
+  background-color: #0017eb;
+  border-color: #0017eb;
+}
+
+input[type="checkbox"]:checked::after {
+  opacity: 1; /* Show checkmark icon when the checkbox is checked */
+}
+
+.todo-item.completed-task input[type="checkbox"] {
+  border-color: #0017eb;
+  background-color: #0017eb;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Assuming you have a structure like this for each completed task item */
+.task {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 10px;
+}
+
+.task-checkbox {
+  margin-right: 10px; /* Adjust the space between checkbox and content */
+}
+
+
+/* Style for completed tasks list */
+.completed-list {
+  padding-left: 0; /* Remove default padding from the list */
+}
