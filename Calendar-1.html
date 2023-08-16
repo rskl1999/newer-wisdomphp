@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>wisdom</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+    <link rel="stylesheet" href="assets/css/Landing%20Page.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/Tasks.css">
+    <link rel="stylesheet" href="assets/css/Ultimate-Event-Calendar.css">
+</head>
+
+<body style="font-family: Poppins, sans-serif;">
+    <section style="margin-top: 71px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-7 col-xxl-9">
+                    <div class="mt-5 mb-5" style="font-family: Poppins, sans-serif;">
+                        <div class="container" id="cal"><i class="fa fa-calendar-o d-none"></i>
+                            <div class="row date-cont date-sticky">
+                                <div class="col">
+                                    <p class="text-center text-white mb-2 mt-2" id="year"></p>
+                                </div>
+                            </div>
+                            <div class="row d-none d-md-flex seven-cols days-sticky">
+                                <div class="col-md-1 day days">
+                                    <p class="text-center text-white">S</p>
+                                </div>
+                                <div class="col-md-1 day days">
+                                    <p class="text-center text-white">M</p>
+                                </div>
+                                <div class="col-md-1 day days">
+                                    <p class="text-center text-white">T</p>
+                                </div>
+                                <div class="col-md-1 day days">
+                                    <p class="text-center text-white">W</p>
+                                </div>
+                                <div class="col-md-1 day days">
+                                    <p class="text-center text-white">T</p>
+                                </div>
+                                <div class="col-md-1 day days">
+                                    <p class="text-center text-white">F</p>
+                                </div>
+                                <div class="col-md-1 day days">
+                                    <p class="text-center text-white">S</p>
+                                </div>
+                            </div>
+                            <div class="row seven-cols">
+                                <div class="col-md-1 text-truncate d-none d-md-block ps-1 pe-1 day-blank"></div>
+                                <div class="col-md-1 text-truncate d-none d-md-block ps-1 pe-1 day-blank"></div>
+                                <div class="col-md-1 text-truncate d-none d-md-block ps-1 pe-1 day-blank"></div>
+                                <div class="col-md-1 text-truncate d-none d-md-block ps-1 pe-1 day-blank"></div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">1</p>
+                                    <p class="text-center border rounded border-dark event" data-bs-toggle="tooltip" data-bss-tooltip="" title="Click for more info">Event with&nbsp; border</p>
+                                    <p class="text-center event" data-bs-toggle="tooltip" data-bss-tooltip="" title="Click for more info">Event without border</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">2</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">3</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">4</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">5</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">6</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">7</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col">
+                                    <p class="date">8</p>
+                                    <p class="text-center text-white bg-primary event" data-bs-toggle="tooltip" data-bss-tooltip="" title="Click for more info">Single line event</p>
+                                    <p class="text-center text-white bg-primary event" data-bs-toggle="tooltip" data-bss-tooltip="" title="Click for more info">Mutliple line events will automatically wrap to next line</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">9</p>
+                                    <p class="text-truncate text-center text-white bg-danger event" data-bs-toggle="tooltip" data-bss-tooltip="" title="Click for more info">But you can also set the longer event to truncate</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">10</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">11</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">12</p>
+                                    <p class="text-center text-white bg-dark event event-spec">Columbus<br>Day</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">13</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">14</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">15</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">16</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">17</p>
+                                    <p class="text-center text-white bg-success event event-spec">Special Event<br>Senior Class Picnic 7:00 PM</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">18</p>
+                                    <p class="text-center text-body bg-warning event event-next" data-bs-toggle="tooltip" data-bss-tooltip="">Tournament Day 1</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">19</p>
+                                    <p class="text-center text-body bg-warning event event-next" data-bs-toggle="tooltip" data-bss-tooltip="">Tournament Day 1</p>
+                                </div>
+                                <div class="col-md-1 col-xxl-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="text-nowrap date">20</p>
+                                    <p class="text-center text-body bg-warning event" data-bs-toggle="tooltip" data-bss-tooltip="">Tournament Day 1</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">21</p>
+                                    <p class="text-center text-body bg-warning event event-prev" data-bs-toggle="tooltip" data-bss-tooltip="">Tournament Day 1</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date" style="text-align: left;">22</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">23</p>
+                                    <p class="text-center text-white bg-primary event" data-bs-toggle="tooltip" data-bss-tooltip="" title="Click for more info">Women’s Six Week Self Defence Course<br>Every Friday<br>5:30 PM to 7:00 PM<br>Oct 30 thru Dec 4<br></p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col">
+                                    <p class="date">24</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="text-nowrap date">25</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">26</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">27</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">28</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">29</p>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">30</p><a href="#"></a>
+                                </div>
+                                <div class="col-md-1 day bg-events, day-col" style="box-shadow: 0px 4px 18px rgb(225,225,225);border-radius: 15px;">
+                                    <p class="date">31</p>
+                                    <p class="text-center bg-warning event event-spec"><i class="fas fa-ghost"></i>&nbsp;Halloween</p><a href="#">
+                                        <p class="text-center text-body bg-warning event" data-bs-toggle="tooltip" data-bss-tooltip="" title="Click for more info">Halloween Costume Party Kids Event<br>4:00 PM to 6:00 PM<br></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xxl-3">
+                    <div id="toggle-buttons" style="border-radius: 20px;box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.18);padding: 8px;margin-bottom: 27px;">
+                        <div class="btn-group gap-2" role="group" style="width: 100%;height: 30px;"><button class="btn btn-primary" type="button" style="border-radius: 50px;width: 50%;background: #0017eb;font-size: 15px;padding: 0 12px;">Daily Logs</button><button class="btn btn-primary" type="button" style="border-radius: 50px;width: 50%;background: #ffffff;font-size: 15px;padding: 0 12px;color: rgb(0,0,0);border-style: none;">Tasks</button></div>
+                    </div>
+                    <div style="border-radius: 15px;box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.18);padding: 25px;">
+                        <div>
+                            <h1 class="fw-bold" style="font-size: 25px;">Daily Logs</h1>
+                        </div>
+                        <div id="toggle-buttons-1" style="border-radius: 20px;box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.18);padding: 8px;margin-bottom: 27px;height: 95px;margin-top: 25px;">
+                            <div class="btn-group gap-2" role="group" style="width: 100%;height: 30px;"><button class="btn btn-primary" type="button" style="border-radius: 50px;width: 15%;background: #ffffff;font-size: 16px;padding: 0 12px;height: 62px;color: rgb(0,0,0);text-align: left;border-style: none;margin: 4px;line-height: 20px;margin-right: 0px;padding-top: 8px;margin-left: 17px;"><strong>Rendered Hours</strong></button><button class="btn btn-primary" type="button" style="border-radius: 50px;width: 40%;background: #ffffff;font-size: 15px;padding: 0 12px;height: 62px;color: rgb(0,0,0);text-align: left;border-style: none;margin: 4px;padding-left: 5px;padding-top: 13px;"><strong>08</strong> hrs <strong>30</strong> mins</button></div>
+                        </div>
+                        <div>
+                            <div class="row" style="margin: auto;width: 100%;margin-bottom: 15px;">
+                                <div class="col" id="date-and-time" style="padding-right: 0px;padding-left: 0px;"><label class="form-label" style="font-size: 14px;width: 50%;">Time In</label><input type="time" style="width: 100%;height: 40px;border-radius: 25px;padding: 16px;border: 1px solid #7A7A7A;"></div>
+                                <div class="col" id="date-and-time-1"><label class="form-label" style="font-size: 14px;width: 50%;">Time Out</label><input type="time" style="width: 100%;height: 40px;padding: 16px;border-radius: 25px;border: 1px solid #7A7A7A;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size: 15px;"></div>
+                        </div><button class="btn btn-primary" type="button" style="width: 100%;border-radius: 50px;padding: 5px 10px;margin-top: 10px;background: #0017eb;">Submit Hours</button>
+                    </div>
+                    <div id="toggle-buttons-2" style="border-radius: 20px;box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.18);padding: 8px;margin-bottom: 27px;height: 95px;margin-top: 25px;">
+                        <div class="btn-group gap-2" role="group" style="width: 100%;height: 30px;"><button class="btn btn-primary" type="button" style="border-radius: 50px;width: 15%;background: #ffffff;font-size: 16px;padding: 0 12px;height: 62px;color: rgb(0,0,0);text-align: left;border-style: none;margin: 4px;line-height: 20px;margin-right: 0px;padding-top: 8px;margin-left: 17px;"><strong>Total Rendered</strong></button><button class="btn btn-primary" type="button" style="border-radius: 50px;width: 40%;background: #ffffff;font-size: 19px;padding: 0 12px;height: 62px;color: rgb(0,0,0);text-align: left;border-style: none;margin: 4px;padding-left: 5px;padding-top: 13px;"><strong>128</strong> hrs <strong>30</strong> mins</button></div>
+                    </div>
+                    <div id="toggle-buttons-3" style="border-radius: 20px;box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.18);padding: 8px;margin-bottom: 27px;height: 95px;margin-top: 25px;">
+                        <div class="btn-group gap-2" role="group" style="width: 100%;height: 30px;"><button class="btn btn-primary" type="button" style="border-radius: 50px;width: 15%;background: #ffffff;font-size: 16px;padding: 0 12px;height: 62px;color: rgb(0,0,0);text-align: left;border-style: none;margin: 4px;line-height: 20px;margin-right: 0px;padding-top: 8px;margin-left: 17px;"><strong>Total Required</strong></button><button class="btn btn-primary" type="button" style="border-radius: 50px;width: 40%;background: #ffffff;font-size: 25px;padding: 0 12px;height: 62px;color: rgb(0,0,0);text-align: center;border-style: none;margin: 4px;padding-left: 5px;padding-top: 13px;"><strong>400</strong> hrs</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Card-Carousel-slider.js"></script>
+    <script src="assets/js/Daily-Logs-and-Tasks-Toggle.js"></script>
+    <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="assets/js/Task-List.js"></script>
+    <script src="assets/js/Ultimate-Event-Calendar.js"></script>
+</body>
+
+</html>
